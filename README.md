@@ -1,1 +1,1 @@
-# Employee-Management-System-GraphQL
+# Employee-Management-System
