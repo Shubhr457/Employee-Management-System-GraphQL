@@ -1,0 +1,35 @@
+{
+  "name": "employee-management-system-graphql",
+  "version": "1.0.0",
+  "description": "Employee Management System built with GraphQL, Apollo Server, TypeScript, and SQLite/PostgreSQL",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc && cp -r src/schema dist/schema",
+    "start": "node dist/index.js",
+    "db:migrate": "ts-node src/db/migrate.ts",
+    "db:seed": "ts-node src/db/seed.ts"
+  },
+  "keywords": [
+    "graphql",
+    "apollo-server",
+    "typescript",
+    "employee-management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "graphql": "^16.8.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/pg": "^8.10.9",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
+
